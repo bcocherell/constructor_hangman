@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/bcocherell/constructor_hangman#readme",
   "dependencies": {
+    "chalk-pipe": "^1.1.0",
     "inquirer": "^5.0.0"
   }
 }
