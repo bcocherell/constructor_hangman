@@ -1,16 +1,13 @@
 {
   "name": "constructor_hangman",
   "version": "1.0.0",
-  "description": "",
+  "description": "play hangman with howard stern wack packers",
   "main": "main.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bcocherell/constructor_hangman.git"
   },
-  "author": "",
+  "author": "brian cocherell",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/bcocherell/constructor_hangman/issues"
