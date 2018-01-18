@@ -4,5 +4,5 @@ var Letter = function(letter, masked) {
   this.masked = masked;
 };
 
-// exporting our UserSearch constructor.
+// exporting our Letter constructor.
 module.exports = Letter;

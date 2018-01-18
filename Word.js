@@ -6,7 +6,11 @@ var Word = function() {
   this.solved = false;
 };
 
+// initial word setup
 Word.prototype.initializeWord = function(word) {
+  this.word = [];
+  this.solved = false;
+  
   var splitWord = word.split('');
 
   for (var i = 0; i < splitWord.length; i++){
@@ -19,22 +23,27 @@ Word.prototype.initializeWord = function(word) {
   }
 };
   
+// function to display word and returns true if player wins
 Word.prototype.displayWord = function() {
   var stringWord = '';
+  var winGame = true;
 
   for (var i = 0; i < this.word.length; i++){
     if (this.word[i].masked) {
       stringWord += '_ ';
+      winGame = false;
     }
     else {
       stringWord += (this.word[i].letter + ' ');
     }
   }
+  
+  console.log (stringWord + '\n');
 
-  console.log (stringWord);
+  return winGame;
 };
 
-
+// verifies if guess is correct or incorrect
 Word.prototype.verifyGuess = function(letter) {
 
   var guessedCorrectly = false;
@@ -49,5 +58,5 @@ Word.prototype.verifyGuess = function(letter) {
   return guessedCorrectly;
 };
 
-// exporting our UserSearch constructor.
+// exporting our Word constructor.
 module.exports = Word;
